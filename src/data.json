@@ -5,7 +5,8 @@
 "price":30, 
 "available":1, 
 "vendor":"Himachal Pvt Ltd", 
-"category":"Vegtables" 
+"category":"Vegtables", 
+"quantity":0
 }, 
 { 
 "name":"Banana", 
@@ -13,6 +14,7 @@
 "price":50, 
 "available":1, 
 "category":"Fruits",
+"quantity":0,
 "vendor": "Organic farms"
 
 }, 
@@ -22,6 +24,7 @@
 "price":20, 
 "available":0, 
 "category":"Vegetables", 
+"quantity":0,
 "vendor":"Mallikarjuna farms"
 }, 
 { 
@@ -30,6 +33,7 @@
 "price":25, 
 "available":1, 
 "vendor":"Nagpur farms", 
+"quantity":0,
 "category":"Fruits" 
 } 
 ] 
