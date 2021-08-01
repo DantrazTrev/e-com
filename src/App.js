@@ -16,6 +16,7 @@ function App() {
   }
   const reset =()=>{
     setItems(data)
+    setCart([])
   }
 
   const addToCart=(item)=>{
