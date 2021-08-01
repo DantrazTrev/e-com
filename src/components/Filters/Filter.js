@@ -4,7 +4,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-function Filter({filterfunc,data,items}) {
+function Filter({filterfunc,data,items,reset}) {
   const [open, setopen] = useState(false)
   const purchase=()=>{
     setopen(true)
@@ -14,7 +14,7 @@ function Filter({filterfunc,data,items}) {
   .filter((value, index, self) => self.indexOf(value) === index)
     return(<>
         <Navbar type="light" theme="green" expand="md" sticky="true" >
-        <NavbarBrand href="#">Music and Groceries</NavbarBrand>
+        <NavbarBrand href="#" onClick={reset}>Music and Groceries</NavbarBrand>
         <Nav >
           {categories.map((cat,idx)=>{return(<NavItem> <NavLink href="#" active onClick={()=>{filterfunc(cat)}} key={idx}>
             {cat}

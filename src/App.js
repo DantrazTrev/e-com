@@ -14,6 +14,9 @@ function App() {
     setItems(data.filter(item=>item.category===value)
     )
   }
+  const reset =()=>{
+    setItems(data)
+  }
 
   const addToCart=(item)=>{
     const newCart =cart;
@@ -21,7 +24,7 @@ function App() {
        setCart(newCart)
   }
   return (<>
-    <Filter items={cart} filterfunc={filter} data={data}/>
+    <Filter items={cart} reset={reset} filterfunc={filter} data={data}/>
     <Cards Add={addToCart} data={items}/>
   </>
   );
